@@ -14,16 +14,49 @@
      <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header class="bg-[#1A0B2E] border-b{1px} border-orange-600">
-        <nav class="navbar w-6xl mx-auto flex justify-between items-center py-6">
-            <h2 class="brand text-4xl font-bold">Tech<span class="wave-gradient">Wave</span></h2>
-            <ul class="navlinks flex justify-between gap-8">
-                <li class="nav-item"><a href="" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Episode</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Host</a></li>
-            </ul>
-            <button class="btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
-        </nav>
+    <header>
+        <div class="navbar-container bg-[#1A0B2E] border-gray-800 border-b-1">
+            <nav class="navbar max-w-[1200px] mx-auto flex justify-between items-center py-6">
+                <h2 class=" brand text-4xl font-bold">Tech<span class="wave-gradient">Wave</span></h2>
+                <ul class="nav-links flex justify-between gap-8 md:text-center">
+                    <li class="nav-item"><a href="" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Episode</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Host</a></li>
+                </ul>
+                <button class="btn-primary">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+                
+                <img class="hamburgur w-5  sm:hidden" src="./assets/hamburger-menu.png" alt="">
+                
+            </nav>
+        </div>
+        
+
+        <div class="banner-section bg-[#1A0B2E]">
+            <div class="banner-container text-center w-full h-[700px] relative">
+                <div class="banner-image relative flex justify-center w-full h-[500px] pt-24">
+                    <img class="w-full h-full" src="./assets/hero-bg.png" alt="">
+                    <div class="circle absolute">
+                        <div class="circle w-[300px] h-[300px] ">
+                            <img class="" src="./assets/hero-circle.png" alt="">
+                        </div>
+                        <div class="microphone">
+                            <img class="mic absolute" src="./assets/microphone.png" alt="">
+                            <span class="badge bg-[#00FF88] absolute rounded-full text-black font-bold">New</span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="banner-text">
+                    <h2 class="text-6xl font-extrabold leading-16 mb-2">Techwave</h2>
+                    <p>Your daily dose of tech insights, productivity hacks, and personal growth</p>
+                    <div class="banner-btn font-semibold flex gap-8 justify-center pt-6">
+                        <button class="btn-primary"><i class="fa-brands fa-spotify"></i> Listen On Spotify</button>
+                        <button class="btn-secondary"><i class="fa-regular fa-envelope"></i> Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 </body>
 </html>
