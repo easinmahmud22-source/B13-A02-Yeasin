@@ -87,10 +87,15 @@ body{
     top: 31%;
     right: 32%;
 }
-
-
-
-
+.footer-section{
+    background: url(../assets/footer-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.social-area{
+    top: 35%;
+}
 
 
 
@@ -110,11 +115,13 @@ body{
     nav button,.hamburger{
         display: none;
     }
-    nav,.podcast-section ,
+    nav,
     .choose-container ,
+    .podcast-section,
     .feature-container,
     .host-container{
         max-width: 90%;
+        margin: 0 auto;
     }
     .banner-container{
         height: 550px;
@@ -177,6 +184,13 @@ body{
    .icons{ 
     justify-content: center;
    }
-
+   .social-area{
+    max-width: 300px;
+   }
+   .social-area .nav-links{
+    row-gap: 5px;
+    grid-template-columns: repeat(2 , 1fr);
+   }
+   
 
 }
